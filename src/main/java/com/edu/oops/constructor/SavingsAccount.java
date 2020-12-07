@@ -1,8 +1,13 @@
-package com.edu.oops.inheritance;
+package com.edu.oops.constructor;
 
 public class SavingsAccount extends BankAccount {
 
     int age;
+
+    public SavingsAccount(int accountNo, String name, double balance) {
+        super(accountNo, name, balance);
+        System.out.println("Child class constructor");
+    }
 
     void deposit(double amount) {
 
